@@ -37,6 +37,7 @@ namespace WindowsFormsApp3
             this.metroButton29 = new MetroFramework.Controls.MetroButton();
             this.metroButton30 = new MetroFramework.Controls.MetroButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.textBox_sumcash = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
@@ -94,7 +95,7 @@ namespace WindowsFormsApp3
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.textBox_sumcash = new System.Windows.Forms.TextBox();
+            this.metroTextBox1 = new MetroFramework.Controls.MetroTextBox();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -196,6 +197,16 @@ namespace WindowsFormsApp3
             this.groupBox1.TabIndex = 9;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "groupBox1";
+            // 
+            // textBox_sumcash
+            // 
+            this.textBox_sumcash.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_sumcash.Location = new System.Drawing.Point(96, 180);
+            this.textBox_sumcash.Multiline = true;
+            this.textBox_sumcash.Name = "textBox_sumcash";
+            this.textBox_sumcash.Size = new System.Drawing.Size(125, 39);
+            this.textBox_sumcash.TabIndex = 11;
+            this.textBox_sumcash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             // 
             // label1
             // 
@@ -899,21 +910,44 @@ namespace WindowsFormsApp3
             this.columnHeader4.Text = "비고";
             this.columnHeader4.Width = 95;
             // 
-            // textBox_sumcash
+            // metroTextBox1
             // 
-            this.textBox_sumcash.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.textBox_sumcash.Location = new System.Drawing.Point(96, 180);
-            this.textBox_sumcash.Multiline = true;
-            this.textBox_sumcash.Name = "textBox_sumcash";
-            this.textBox_sumcash.Size = new System.Drawing.Size(125, 39);
-            this.textBox_sumcash.TabIndex = 11;
-            this.textBox_sumcash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // 
+            // 
+            this.metroTextBox1.CustomButton.Image = null;
+            this.metroTextBox1.CustomButton.Location = new System.Drawing.Point(53, 1);
+            this.metroTextBox1.CustomButton.Name = "";
+            this.metroTextBox1.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.metroTextBox1.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
+            this.metroTextBox1.CustomButton.TabIndex = 1;
+            this.metroTextBox1.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
+            this.metroTextBox1.CustomButton.UseSelectable = true;
+            this.metroTextBox1.CustomButton.Visible = false;
+            this.metroTextBox1.Lines = new string[] {
+        "metroTextBox1"};
+            this.metroTextBox1.Location = new System.Drawing.Point(611, 478);
+            this.metroTextBox1.MaxLength = 32767;
+            this.metroTextBox1.Name = "metroTextBox1";
+            this.metroTextBox1.PasswordChar = '\0';
+            this.metroTextBox1.ScrollBars = System.Windows.Forms.ScrollBars.None;
+            this.metroTextBox1.SelectedText = "";
+            this.metroTextBox1.SelectionLength = 0;
+            this.metroTextBox1.SelectionStart = 0;
+            this.metroTextBox1.ShortcutsEnabled = true;
+            this.metroTextBox1.Size = new System.Drawing.Size(135, 23);
+            this.metroTextBox1.TabIndex = 25;
+            this.metroTextBox1.Text = "metroTextBox1";
+            this.metroTextBox1.UseSelectable = true;
+            this.metroTextBox1.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
+            this.metroTextBox1.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
             // 메뉴
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 750);
+            this.Controls.Add(this.metroTextBox1);
             this.Controls.Add(this.metroButton24);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.tabControl1);
@@ -1008,5 +1042,6 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
         private System.Windows.Forms.TextBox textBox_sumcash;
+        private MetroFramework.Controls.MetroTextBox metroTextBox1;
     }
 }

@@ -1,21 +1,45 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Data.SqlClient;
+using System.Diagnostics;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using Oracle.DataAccess.Client;
 
 namespace WindowsFormsApp3
 {
+    
     class ORDER
     {
+        private int SelectedRowIndex; //수정하거나 삭제하기 위해 선택된 행의 인덱스를 저장한다. 
+        OracleDataAdapter DBAdapter; // Data Provider인 DBAdapter 입니다. 
+        DataSet DS; // DataSet 객체입니다. 
+        OracleCommandBuilder myCommandBuilder;
+        DataTable ProductTable; // DataTable 객체입니다. 
+        SqlCommand cmd;
+        int countsum;
+        int menusale;
+        
+
         // 각 메뉴 하나당 곱해야할 가격 종류
-        private int won1500 = 1500, won2000 = 2000, won2500 = 2500, won4500 = 4500, won15000 = 15000;
+        private int won1, won2, won3, won4, won5, won6, won11, won12, won13, won14, won15, won16, won21, won22, won23, won24, won25, won26;
+
+
+
         // 각 메뉴별 갯수 카운트 (이제 수량이랑 금액 계산때문에 1로 둠)
         private int chamcoun = 1, freshcoun = 1, startcoun = 1, noncoun = 1, jinrocoun = 1, casscoun = 1, hitecoun = 1, terracoun = 1, chunghacoun = 1, colacoun = 1, cidercoun = 1, fantacoun = 1;
         // 각 음료별 주문한 총 금액
         private int chammny = 0, freshmny = 0, startmny = 0, nonmny = 0, jinromny = 0, cassmny = 0, hitemny = 0, terramny = 0, chunghamny = 0, colamny = 0, cidermny = 0, fantamny = 0;
 
         // 총 금액, 총 갯수
+
+
+
 
         public int sumnumber
         {
@@ -173,72 +197,72 @@ namespace WindowsFormsApp3
         // 메뉴들 총금액을 계산해서 반환해주는 메소드
         public int NonSum()
         {
-            nonsum = noncount * won4500;
+            nonsum = noncount;
             return nonsum;
         }
 
         public int ChamSum()
         {
-            chamsum = chamcount * won4500;
+            chamsum = chamcount * menusale;
             return chamsum;
         }
 
         public int FreshSum()
         {
-            freshsum = freshcount * won4500;
+            freshsum = freshcount * menusale;
             return freshsum;
         }
 
         public int StartSum()
         {
-            startsum = startcount * won4500;
+            startsum = startcount;
             return startsum;
         }
         public int JinroSum()
         {
-            jinrosum = jinrocount * won4500;
+            jinrosum = jinrocount;
             return jinrosum;
         }
 
         public int CassSum()
         {
-            casssum = casscount * won4500;
+            casssum = casscount;
             return casssum;
         }
 
         public int HiteSum()
         {
-            hitesum = hitecount * won4500;
+            hitesum = hitecount;
             return hitesum;
         }
 
         public int TerraSum()
         {
-            terrasum = terracount * won4500;
+            terrasum = terracount;
             return terrasum;
         }
 
         public int ChunghaSum()
         {
-            chunghasum = chunghacount * won4500;
+            chunghasum = chunghacount;
             return chunghasum;
         }
 
         public int ColaSum()
         {
-            colasum = colacount * won2000;
+            colasum = colacount;
             return colasum;
         }
 
         public int CiderSum()
         {
-            cidersum = cidercount * won2000;
+            cidersum = cidercount;
             return cidersum;
         }
 
         public int FantaSum()
         {
-            fantasum = fantacount * won2000;
+            fantasum = fantacount;
             return fantasum;
         }
 

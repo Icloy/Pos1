@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -18,6 +19,28 @@ namespace WindowsFormsApp3
 
         int cash = 0;
         int stockErrorcount = 0;
+        public void startorder()
+        {
+            string strConn = "User Id=hong1; Password = 1111; Data Source = (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = xe))); ";
+            OracleConnection conn = new OracleConnection(strConn);
+            conn.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+
+            cmd.CommandText = "select * from Product where name = 주류1";
+            cmd.Parameters.Add(new OracleParameter("@name", "주류1"));
+
+            OracleDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                String s = reader["wsprice"] as String;
+                metroTextBox1.Text = s;
+            }
+            reader.Close();
+        }
+
+
         public 메뉴()
         {
             InitializeComponent();
@@ -65,6 +88,7 @@ namespace WindowsFormsApp3
 
         private void button_cham_Click(object sender, EventArgs e)
         {
+            startorder();
             int count = listView1.Items.Count; // 리스트뷰 항목 수 반환
             if (ord.chamcount >= 2)
             {

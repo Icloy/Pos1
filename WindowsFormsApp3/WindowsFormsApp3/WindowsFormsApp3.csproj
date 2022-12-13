@@ -99,6 +99,18 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="재고관리_검색.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="재고관리_검색.Designer.cs">
+      <DependentUpon>재고관리_검색.cs</DependentUpon>
+    </Compile>
+    <Compile Include="재고관리_수정.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="재고관리_수정.Designer.cs">
+      <DependentUpon>재고관리_수정.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="메인메뉴.resx">
       <DependentUpon>메인메뉴.cs</DependentUpon>
     </EmbeddedResource>
@@ -124,6 +136,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="재고관리_검색.resx">
+      <DependentUpon>재고관리_검색.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="재고관리_수정.resx">
+      <DependentUpon>재고관리_수정.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
