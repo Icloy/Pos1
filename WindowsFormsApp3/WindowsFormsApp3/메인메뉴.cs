@@ -12,15 +12,21 @@ namespace WindowsFormsApp3
 {
     public partial class 메인메뉴 : MetroFramework.Forms.MetroForm
     {
+
+        
         public 메인메뉴()
         {
             InitializeComponent();
         }
+
+        
+
         private void Form1_Load(object sender, EventArgs e)
         {
-            //새로고침 코드 여기에다가 넣깅~
+           
         }
 
+        
         private void metroButton1_Click(object sender, EventArgs e)
         {
             //상품 관리 버튼
@@ -43,48 +49,47 @@ namespace WindowsFormsApp3
             salesform.ShowDialog();
         }
 
-        private void metroGrid1_Click(object sender, EventArgs e)
+       
+
+        private void metroGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            메뉴 Menuform = new 메뉴();
-            Menuform.ShowDialog();
+
         }
 
-        private void metroGrid2_Click(object sender, EventArgs e)
+        public void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            메뉴 Menuform = new 메뉴();
-            Menuform.ShowDialog();
+            this.listView1.Items.Clear();
+            메뉴 Menuform1 = new 메뉴(this);
+            
+            
+            Menuform1.ShowDialog();
+            
+            
         }
 
-        private void metroGrid3_Click(object sender, EventArgs e)
+        private void listView1_SelectedIndexChanged(object sender, EventArgs e)
         {
-            메뉴 Menuform = new 메뉴();
-            Menuform.ShowDialog();
+
         }
 
-        private void metroGrid4_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-            메뉴 Menuform = new 메뉴();
-            Menuform.ShowDialog();
+            
+
         }
 
-        private void metroGrid5_Click(object sender, EventArgs e)
+        private void button1_Click_1(object sender, EventArgs e)
         {
-            메뉴 Menuform = new 메뉴();
-            Menuform.ShowDialog();
+
         }
 
-        private void metroGrid6_Click(object sender, EventArgs e)
+        private void listView2_ColumnClick(object sender, ColumnClickEventArgs e)
         {
-            메뉴 Menuform = new 메뉴();
-            Menuform.ShowDialog();
+            this.listView2.Items.Clear();
+            메뉴 Menuform1 = new 메뉴(this);
+
+
+            Menuform1.ShowDialog();
         }
-
-        private void metroGrid7_Click(object sender, EventArgs e)
-        {
-            메뉴 Menuform = new 메뉴();
-            Menuform.ShowDialog();
-        }
-
-
     }
 }

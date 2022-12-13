@@ -1,31 +1,87 @@
-﻿using System;
+﻿using Oracle.DataAccess.Client;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+using Oracle.DataAccess.Client;
 
 
 namespace WindowsFormsApp3
 {
     public partial class 메뉴 : MetroFramework.Forms.MetroForm
     {
+
+
         ORDER ord = new ORDER();
+        메인메뉴 abc = new 메인메뉴();
 
 
         int cash = 0;
         int stockErrorcount = 0;
+<<<<<<< HEAD
+=======
+        public void startorder()
+        {
+            string strConn = "User Id=hong1; Password = 1111; Data Source = (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = xe))); ";
+            OracleConnection conn = new OracleConnection(strConn);
+            conn.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+
+            cmd.CommandText = "select * from Product where name = 주류1";
+            cmd.Parameters.Add(new OracleParameter("@name", "주류1"));
+
+            OracleDataReader reader = cmd.ExecuteReader();
+            while (reader.Read())
+            {
+                String s = reader["wsprice"] as String;
+                metroTextBox1.Text = s;
+            }
+            reader.Close();
+        }
+
+>>>>>>> fc85160b13687ae2dcedffba2e8cfd434751f6dd
+
         public 메뉴()
         {
             InitializeComponent();
         }
 
+        메인메뉴 frm1;
+        public 메인메뉴 fm;
+
+        public 메뉴(메인메뉴 _form)
+        {
+            InitializeComponent();
+            frm1 = _form;
+        }
+
+
         private void metroButton4_Click(object sender, EventArgs e)
         {
+            int count = listView1.Items.Count;
+            if (count == 0)
+            {
+                MessageBox.Show("취소할 메뉴가 없습니다!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                listView1.Items.Clear();
 
+                textBox_sumcash.Text = "0";
+
+                cash = 0;
+                ord.chamcount = ord.freshcount = ord.startcount = ord.jinrocount = ord.casscount = ord.hitecount = ord.terracount = ord.chunghacount = ord.colacount = ord.cidercount = ord.fantacount = ord.meet1count = ord.meet2count = ord.meet3count = ord.meet4count = ord.meet5count = ord.meet6count = ord.meet7count = ord.meet8count = ord.meet9count = 1;
+                ord.chamsum = ord.freshsum = ord.startsum = ord.jinrosum = ord.casssum = ord.hitesum = ord.terrasum = ord.chunghasum = ord.colasum = ord.cidersum = ord.fantasum = ord.meet1sum = ord.meet2sum = ord.meet3sum = ord.meet4sum = ord.meet5sum = ord.meet6sum = ord.meet7sum = ord.meet8sum = ord.meet9sum = 0;
+            }
         }
 
         private void metroButton5_Click(object sender, EventArgs e)
@@ -51,20 +107,75 @@ namespace WindowsFormsApp3
         private void button2_Click(object sender, EventArgs e)
         {
 
+            foreach (ListViewItem item in listView1.Items)
+            {
+                frm1.listView1.Items.Add((ListViewItem)item.Clone());
+            }
+
+
+
+
+
+            this.Close();
+
         }
+
 
         private void Form4_Load(object sender, EventArgs e)
         {
 
         }
-
         private void metroButton1_Click(object sender, EventArgs e)
         {
 
+
+            int count = listView1.Items.Count; // 리스트뷰 항목 수 반
+
+
+            if (ord.meet1count >= 2)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (listView1.Items[i].SubItems[0].Text == metroButton1.Text) // 리스트 뷰에 해당 버튼의 텍스트가 있으면
+                    {
+                        listView1.Items[i].Focused = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+
+
+                        listView1.Items[i].Selected = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+
+
+                        listView1.FocusedItem.SubItems[0].Text = metroButton1.Text; // 포커스된 부분에 내용 덮어쓰는거
+
+                        listView1.FocusedItem.SubItems[1].Text = Convert.ToString(ord.meet1count); // 포커스된 부분에 내용 덮어쓰는거
+
+                        listView1.FocusedItem.SubItems[2].Text = Convert.ToString(ord.Meet1Sum()); // 포커스된 부분에 내용 덮어쓰는거
+
+                        ord.meet1count++;
+                        listView1.Items[i].Selected = false;
+
+
+                    }
+                }
+            }
+            else
+            {
+                var meat = new string[] { this.metroButton1.Text, Convert.ToString(ord.meet1count), Convert.ToString(ord.Meet1Sum()) };
+                var lvt = new ListViewItem(meat);
+                var lvt2 = new ListViewItem(meat);
+
+                this.listView1.Items.Add(lvt);
+
+
+                listView1.Focus();
+                ord.meet1count++;
+            }
+
+            textBox_sumcash.Text = Convert.ToString(ord.SumCash());
         }
 
         private void button_cham_Click(object sender, EventArgs e)
         {
+            startorder();
             int count = listView1.Items.Count; // 리스트뷰 항목 수 반환
             if (ord.chamcount >= 2)
             {
@@ -402,6 +513,278 @@ namespace WindowsFormsApp3
             }
 
             textBox_sumcash.Text = Convert.ToString(ord.SumCash());
+        }
+
+        private void metroButton2_Click(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count; // 리스트뷰 항목 수 반
+
+
+            if (ord.meet2count >= 2)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (listView1.Items[i].SubItems[0].Text == metroButton2.Text) // 리스트 뷰에 해당 버튼의 텍스트가 있으면
+                    {
+                        listView1.Items[i].Focused = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+
+
+                        listView1.Items[i].Selected = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+
+
+                        listView1.FocusedItem.SubItems[0].Text = metroButton2.Text; // 포커스된 부분에 내용 덮어쓰는거
+
+                        listView1.FocusedItem.SubItems[1].Text = Convert.ToString(ord.meet2count); // 포커스된 부분에 내용 덮어쓰는거
+
+                        listView1.FocusedItem.SubItems[2].Text = Convert.ToString(ord.Meet2Sum()); // 포커스된 부분에 내용 덮어쓰는거
+
+                        ord.meet2count++;
+                        listView1.Items[i].Selected = false;
+
+
+                    }
+                }
+            }
+            else
+            {
+                var meat = new string[] { this.metroButton2.Text, Convert.ToString(ord.meet2count), Convert.ToString(ord.Meet2Sum()) };
+                var lvt = new ListViewItem(meat);
+                var lvt2 = new ListViewItem(meat);
+
+                this.listView1.Items.Add(lvt);
+
+
+                listView1.Focus();
+                ord.meet2count++;
+            }
+
+            textBox_sumcash.Text = Convert.ToString(ord.SumCash());
+        }
+
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count; // 리스트뷰 항목 수 반환
+            if (ord.meet3count >= 2)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (listView1.Items[i].SubItems[0].Text == metroButton3.Text) // 리스트 뷰에 해당 버튼의 텍스트가 있으면
+                    {
+                        listView1.Items[i].Focused = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.Items[i].Selected = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.FocusedItem.SubItems[0].Text = metroButton3.Text; // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[1].Text = Convert.ToString(ord.meet3count); // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[2].Text = Convert.ToString(ord.Meet3Sum()); // 포커스된 부분에 내용 덮어쓰는거
+                        ord.meet3count++;
+                        listView1.Items[i].Selected = false;
+                    }
+                }
+            }
+            else
+            {
+                var meat = new string[] { this.metroButton3.Text, Convert.ToString(ord.meet3count), Convert.ToString(ord.Meet3Sum()) };
+                var lvt = new ListViewItem(meat);
+                this.listView1.Items.Add(lvt);
+                listView1.Focus();
+                ord.meet3count++;
+            }
+
+            textBox_sumcash.Text = Convert.ToString(ord.SumCash());
+        }
+
+        private void metroButton4_Click_1(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count; // 리스트뷰 항목 수 반환
+            if (ord.meet4count >= 2)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (listView1.Items[i].SubItems[0].Text == metroButton4.Text) // 리스트 뷰에 해당 버튼의 텍스트가 있으면
+                    {
+                        listView1.Items[i].Focused = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.Items[i].Selected = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.FocusedItem.SubItems[0].Text = metroButton4.Text; // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[1].Text = Convert.ToString(ord.meet4count); // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[2].Text = Convert.ToString(ord.Meet4Sum()); // 포커스된 부분에 내용 덮어쓰는거
+                        ord.meet4count++;
+                        listView1.Items[i].Selected = false;
+                    }
+                }
+            }
+            else
+            {
+                var meat = new string[] { this.metroButton4.Text, Convert.ToString(ord.meet4count), Convert.ToString(ord.Meet4Sum()) };
+                var lvt = new ListViewItem(meat);
+                this.listView1.Items.Add(lvt);
+                listView1.Focus();
+                ord.meet4count++;
+            }
+
+            textBox_sumcash.Text = Convert.ToString(ord.SumCash());
+        }
+
+        private void metroButton5_Click_1(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count; // 리스트뷰 항목 수 반환
+            if (ord.meet5count >= 2)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (listView1.Items[i].SubItems[0].Text == metroButton5.Text) // 리스트 뷰에 해당 버튼의 텍스트가 있으면
+                    {
+                        listView1.Items[i].Focused = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.Items[i].Selected = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.FocusedItem.SubItems[0].Text = metroButton5.Text; // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[1].Text = Convert.ToString(ord.meet5count); // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[2].Text = Convert.ToString(ord.Meet5Sum()); // 포커스된 부분에 내용 덮어쓰는거
+                        ord.meet5count++;
+                        listView1.Items[i].Selected = false;
+                    }
+                }
+            }
+            else
+            {
+                var meat = new string[] { this.metroButton5.Text, Convert.ToString(ord.meet5count), Convert.ToString(ord.Meet5Sum()) };
+                var lvt = new ListViewItem(meat);
+                this.listView1.Items.Add(lvt);
+                listView1.Focus();
+                ord.meet5count++;
+            }
+
+            textBox_sumcash.Text = Convert.ToString(ord.SumCash());
+        }
+
+        private void metroButton6_Click_1(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count; // 리스트뷰 항목 수 반환
+            if (ord.meet6count >= 2)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (listView1.Items[i].SubItems[0].Text == metroButton6.Text) // 리스트 뷰에 해당 버튼의 텍스트가 있으면
+                    {
+                        listView1.Items[i].Focused = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.Items[i].Selected = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.FocusedItem.SubItems[0].Text = metroButton6.Text; // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[1].Text = Convert.ToString(ord.meet6count); // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[2].Text = Convert.ToString(ord.Meet6Sum()); // 포커스된 부분에 내용 덮어쓰는거
+                        ord.meet6count++;
+                        listView1.Items[i].Selected = false;
+                    }
+                }
+            }
+            else
+            {
+                var meat = new string[] { this.metroButton6.Text, Convert.ToString(ord.meet6count), Convert.ToString(ord.Meet6Sum()) };
+                var lvt = new ListViewItem(meat);
+                this.listView1.Items.Add(lvt);
+                listView1.Focus();
+                ord.meet6count++;
+            }
+
+            textBox_sumcash.Text = Convert.ToString(ord.SumCash());
+        }
+
+        private void metroButton7_Click_1(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count; // 리스트뷰 항목 수 반환
+            if (ord.meet7count >= 2)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (listView1.Items[i].SubItems[0].Text == metroButton7.Text) // 리스트 뷰에 해당 버튼의 텍스트가 있으면
+                    {
+                        listView1.Items[i].Focused = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.Items[i].Selected = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.FocusedItem.SubItems[0].Text = metroButton7.Text; // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[1].Text = Convert.ToString(ord.meet7count); // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[2].Text = Convert.ToString(ord.Meet7Sum()); // 포커스된 부분에 내용 덮어쓰는거
+                        ord.meet7count++;
+                        listView1.Items[i].Selected = false;
+                    }
+                }
+            }
+            else
+            {
+                var meat = new string[] { this.metroButton7.Text, Convert.ToString(ord.meet7count), Convert.ToString(ord.Meet2Sum()) };
+                var lvt = new ListViewItem(meat);
+                this.listView1.Items.Add(lvt);
+                listView1.Focus();
+                ord.meet7count++;
+            }
+
+            textBox_sumcash.Text = Convert.ToString(ord.SumCash());
+        }
+
+        private void metroButton8_Click_1(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count; // 리스트뷰 항목 수 반환
+            if (ord.meet8count >= 2)
+            {
+                for (int i = 0; i < count; i++)
+                {
+                    if (listView1.Items[i].SubItems[0].Text == metroButton8.Text) // 리스트 뷰에 해당 버튼의 텍스트가 있으면
+                    {
+                        listView1.Items[i].Focused = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.Items[i].Selected = true; // 리스트뷰 컨트롤에서 항목 선택 가능하도록 하는거
+                        listView1.FocusedItem.SubItems[0].Text = metroButton8.Text; // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[1].Text = Convert.ToString(ord.meet8count); // 포커스된 부분에 내용 덮어쓰는거
+                        listView1.FocusedItem.SubItems[2].Text = Convert.ToString(ord.Meet8Sum()); // 포커스된 부분에 내용 덮어쓰는거
+                        ord.meet8count++;
+                        listView1.Items[i].Selected = false;
+                    }
+                }
+            }
+            else
+            {
+                var meat = new string[] { this.metroButton8.Text, Convert.ToString(ord.meet2count), Convert.ToString(ord.Meet8Sum()) };
+                var lvt = new ListViewItem(meat);
+                this.listView1.Items.Add(lvt);
+                listView1.Focus();
+                ord.meet8count++;
+            }
+
+            textBox_sumcash.Text = Convert.ToString(ord.SumCash());
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count;
+            if (count == 0)
+            {
+                MessageBox.Show("결제할 메뉴가 없습니다!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult dlr = MessageBox.Show("현금결제 하시겠습니까?", "현금 결제", MessageBoxButtons.YesNo);
+                listView1.Items.Clear();
+
+                textBox_sumcash.Text = "0";
+
+                cash = 0;
+                ord.chamcount = ord.freshcount = ord.startcount = ord.jinrocount = ord.casscount = ord.hitecount = ord.terracount = ord.chunghacount = ord.colacount = ord.cidercount = ord.fantacount = ord.meet1count = ord.meet2count = ord.meet3count = ord.meet4count = ord.meet5count = ord.meet6count = ord.meet7count = ord.meet8count = ord.meet9count = 1;
+                ord.chamsum = ord.freshsum = ord.startsum = ord.jinrosum = ord.casssum = ord.hitesum = ord.terrasum = ord.chunghasum = ord.colasum = ord.cidersum = ord.fantasum = ord.meet1sum = ord.meet2sum = ord.meet3sum = ord.meet4sum = ord.meet5sum = ord.meet6sum = ord.meet7sum = ord.meet8sum = ord.meet9sum = 0;
+            }
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            int count = listView1.Items.Count;
+            if (count == 0)
+            {
+                MessageBox.Show("결제할 메뉴가 없습니다!!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
+            else
+            {
+                DialogResult dlr = MessageBox.Show("카드결제 하시겠습니까?", "카드 결제", MessageBoxButtons.YesNo);
+                listView1.Items.Clear();
+
+                textBox_sumcash.Text = "0";
+
+                cash = 0;
+                ord.chamcount = ord.freshcount = ord.startcount = ord.jinrocount = ord.casscount = ord.hitecount = ord.terracount = ord.chunghacount = ord.colacount = ord.cidercount = ord.fantacount = ord.meet1count = ord.meet2count = ord.meet3count = ord.meet4count = ord.meet5count = ord.meet6count = ord.meet7count = ord.meet8count = ord.meet9count = 1;
+                ord.chamsum = ord.freshsum = ord.startsum = ord.jinrosum = ord.casssum = ord.hitesum = ord.terrasum = ord.chunghasum = ord.colasum = ord.cidersum = ord.fantasum = ord.meet1sum = ord.meet2sum = ord.meet3sum = ord.meet4sum = ord.meet5sum = ord.meet6sum = ord.meet7sum = ord.meet8sum = ord.meet9sum = 0;
+            }
         }
     }
 }
