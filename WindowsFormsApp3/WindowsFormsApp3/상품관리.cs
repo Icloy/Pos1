@@ -201,6 +201,7 @@ namespace WindowsFormsApp3
         private void SearchBtn_Click(object sender, EventArgs e)
         {
             상품관리_검색 Searchform = new 상품관리_검색();
+            Searchform.Owner = this;
 
             Searchform.SearchDBGrid.DataSource = DS.Tables["Product"].DefaultView;
 

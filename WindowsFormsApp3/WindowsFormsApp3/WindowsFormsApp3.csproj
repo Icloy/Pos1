@@ -60,6 +60,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="매출관리.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="매출관리.Designer.cs">
+      <DependentUpon>매출관리.cs</DependentUpon>
+    </Compile>
     <Compile Include="메인메뉴.cs">
       <SubType>Form</SubType>
     </Compile>

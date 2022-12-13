@@ -129,6 +129,7 @@
             this.metroGrid1.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid1.Size = new System.Drawing.Size(242, 160);
             this.metroGrid1.TabIndex = 0;
+            this.metroGrid1.Click += new System.EventHandler(this.metroGrid1_Click);
             // 
             // 제품명
             // 
@@ -186,6 +187,7 @@
             this.metroGrid2.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid2.Size = new System.Drawing.Size(242, 160);
             this.metroGrid2.TabIndex = 1;
+            this.metroGrid2.Click += new System.EventHandler(this.metroGrid2_Click);
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -243,6 +245,7 @@
             this.metroGrid3.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid3.Size = new System.Drawing.Size(242, 160);
             this.metroGrid3.TabIndex = 2;
+            this.metroGrid3.Click += new System.EventHandler(this.metroGrid3_Click);
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -300,6 +303,7 @@
             this.metroGrid4.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid4.Size = new System.Drawing.Size(242, 160);
             this.metroGrid4.TabIndex = 3;
+            this.metroGrid4.Click += new System.EventHandler(this.metroGrid4_Click);
             // 
             // dataGridViewTextBoxColumn5
             // 
@@ -401,6 +405,7 @@
             this.metroGrid5.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid5.Size = new System.Drawing.Size(242, 160);
             this.metroGrid5.TabIndex = 11;
+            this.metroGrid5.Click += new System.EventHandler(this.metroGrid5_Click);
             // 
             // dataGridViewTextBoxColumn13
             // 
@@ -458,6 +463,7 @@
             this.metroGrid6.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid6.Size = new System.Drawing.Size(242, 160);
             this.metroGrid6.TabIndex = 12;
+            this.metroGrid6.Click += new System.EventHandler(this.metroGrid6_Click);
             // 
             // dataGridViewTextBoxColumn15
             // 
@@ -515,6 +521,7 @@
             this.metroGrid7.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
             this.metroGrid7.Size = new System.Drawing.Size(242, 160);
             this.metroGrid7.TabIndex = 13;
+            this.metroGrid7.Click += new System.EventHandler(this.metroGrid7_Click);
             // 
             // dataGridViewTextBoxColumn17
             // 
@@ -526,7 +533,7 @@
             this.dataGridViewTextBoxColumn18.HeaderText = "가격";
             this.dataGridViewTextBoxColumn18.Name = "dataGridViewTextBoxColumn18";
             // 
-            // Form1
+            // 메인메뉴
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -542,7 +549,7 @@
             this.Controls.Add(this.metroGrid3);
             this.Controls.Add(this.metroGrid2);
             this.Controls.Add(this.metroGrid1);
-            this.Name = "Form1";
+            this.Name = "메인메뉴";
             this.Text = "가게 관리 프로그램";
             this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.metroGrid1)).EndInit();

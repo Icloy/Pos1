@@ -30,5 +30,46 @@ namespace WindowsFormsApp3
           //새로고침 코드 여기에다가 넣깅~
         }
 
+        private void metroGrid1_Click(object sender, EventArgs e)
+        {
+            메뉴 Menuform = new 메뉴();
+            Menuform.ShowDialog();
+        }
+
+        private void metroGrid2_Click(object sender, EventArgs e)
+        {
+            메뉴 Menuform = new 메뉴();
+            Menuform.ShowDialog();
+        }
+
+        private void metroGrid3_Click(object sender, EventArgs e)
+        {
+            메뉴 Menuform = new 메뉴();
+            Menuform.ShowDialog();
+        }
+
+        private void metroGrid4_Click(object sender, EventArgs e)
+        {
+            메뉴 Menuform = new 메뉴();
+            Menuform.ShowDialog();
+        }
+
+        private void metroGrid5_Click(object sender, EventArgs e)
+        {
+            메뉴 Menuform = new 메뉴();
+            Menuform.ShowDialog();
+        }
+
+        private void metroGrid6_Click(object sender, EventArgs e)
+        {
+            메뉴 Menuform = new 메뉴();
+            Menuform.ShowDialog();
+        }
+
+        private void metroGrid7_Click(object sender, EventArgs e)
+        {
+            메뉴 Menuform = new 메뉴();
+            Menuform.ShowDialog();
+        }
     }
 }
