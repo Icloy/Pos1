@@ -127,6 +127,7 @@ C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsForms
 C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\MetroFramework.Fonts.dll
 C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\Oracle.DataAccess.dll
 C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CopyComplete
+<<<<<<< HEAD
 C:\C#_DB_프로젝트\Pos2\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
 C:\C#_DB_프로젝트\Pos2\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
 C:\C#_DB_프로젝트\Pos2\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
@@ -149,3 +150,26 @@ C:\C#_DB_프로젝트\Pos2\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFo
 C:\C#_DB_프로젝트\Pos2\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
 C:\C#_DB_프로젝트\Pos2\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.재고관리_검색.resources
 C:\C#_DB_프로젝트\Pos2\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.재고관리_수정.resources
+=======
+C:\Users\lysna\Desktop\1\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.매출관리.resources
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\MetroFramework.Design.dll
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\MetroFramework.dll
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\Oracle.DataAccess.dll
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.매출관리.resources
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.메인메뉴.resources
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.상품관리.resources
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.재고관리.resources
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.메뉴.resources
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.상품관리_검색.resources
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CopyComplete
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\LYS\Desktop\Main\ST\2-2\C#\PJ\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+>>>>>>> 14bb4116ab61c0de305b010ad21417a6baea226c
