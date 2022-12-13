@@ -108,3 +108,22 @@ C:\Users\lysna\Desktop\1\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\Window
 C:\Users\lysna\Desktop\1\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CopyComplete
 C:\Users\lysna\Desktop\1\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
 C:\Users\lysna\Desktop\1\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.AssemblyReference.cache
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.메인메뉴.resources
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.상품관리.resources
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.재고관리.resources
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.메뉴.resources
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.상품관리_검색.resources
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.Properties.Resources.resources
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.GenerateResource.cache
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CoreCompileInputs.cache
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.exe
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.pdb
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe.config
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.exe
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\WindowsFormsApp3.pdb
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\MetroFramework.Design.dll
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\MetroFramework.dll
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\MetroFramework.Fonts.dll
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\bin\Debug\Oracle.DataAccess.dll
+C:\Users\dbwog\OneDrive\바탕 화면\possys2\Pos1\WindowsFormsApp3\WindowsFormsApp3\obj\Debug\WindowsFormsApp3.csproj.CopyComplete

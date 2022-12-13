@@ -38,48 +38,12 @@ namespace WindowsFormsApp3
             this.metroButton30 = new MetroFramework.Controls.MetroButton();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.button2 = new System.Windows.Forms.Button();
             this.button3 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
-            this.tabPage2 = new System.Windows.Forms.TabPage();
-            this.listView_order = new System.Windows.Forms.ListView();
-            this.tabPage3 = new System.Windows.Forms.TabPage();
-            this.metroButton17 = new MetroFramework.Controls.MetroButton();
-            this.metroButton18 = new MetroFramework.Controls.MetroButton();
-            this.metroButton19 = new MetroFramework.Controls.MetroButton();
-            this.metroButton20 = new MetroFramework.Controls.MetroButton();
-            this.metroButton21 = new MetroFramework.Controls.MetroButton();
-            this.metroButton22 = new MetroFramework.Controls.MetroButton();
-            this.metroButton23 = new MetroFramework.Controls.MetroButton();
-            this.metroButton31 = new MetroFramework.Controls.MetroButton();
-            this.metroButton32 = new MetroFramework.Controls.MetroButton();
-            this.metroButton33 = new MetroFramework.Controls.MetroButton();
-            this.metroButton34 = new MetroFramework.Controls.MetroButton();
-            this.metroButton35 = new MetroFramework.Controls.MetroButton();
-            this.metroButton36 = new MetroFramework.Controls.MetroButton();
-            this.metroButton37 = new MetroFramework.Controls.MetroButton();
-            this.metroButton38 = new MetroFramework.Controls.MetroButton();
-            this.metroButton39 = new MetroFramework.Controls.MetroButton();
-            this.metroButton40 = new MetroFramework.Controls.MetroButton();
-            this.metroButton41 = new MetroFramework.Controls.MetroButton();
-            this.metroButton42 = new MetroFramework.Controls.MetroButton();
-            this.metroButton43 = new MetroFramework.Controls.MetroButton();
-            this.metroButton44 = new MetroFramework.Controls.MetroButton();
-            this.metroButton45 = new MetroFramework.Controls.MetroButton();
-            this.metroButton46 = new MetroFramework.Controls.MetroButton();
-            this.metroButton47 = new MetroFramework.Controls.MetroButton();
-            this.metroButton48 = new MetroFramework.Controls.MetroButton();
-            this.metroButton49 = new MetroFramework.Controls.MetroButton();
-            this.metroButton50 = new MetroFramework.Controls.MetroButton();
-            this.metroButton51 = new MetroFramework.Controls.MetroButton();
-            this.metroButton52 = new MetroFramework.Controls.MetroButton();
-            this.metroButton53 = new MetroFramework.Controls.MetroButton();
-            this.metroButton54 = new MetroFramework.Controls.MetroButton();
-            this.metroButton55 = new MetroFramework.Controls.MetroButton();
             this.metroButton16 = new MetroFramework.Controls.MetroButton();
             this.metroButton15 = new MetroFramework.Controls.MetroButton();
             this.metroButton12 = new MetroFramework.Controls.MetroButton();
@@ -96,10 +60,41 @@ namespace WindowsFormsApp3
             this.metroButton5 = new MetroFramework.Controls.MetroButton();
             this.metroButton2 = new MetroFramework.Controls.MetroButton();
             this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.metroButton17 = new MetroFramework.Controls.MetroButton();
+            this.metroButton18 = new MetroFramework.Controls.MetroButton();
+            this.metroButton19 = new MetroFramework.Controls.MetroButton();
+            this.metroButton20 = new MetroFramework.Controls.MetroButton();
+            this.metroButton21 = new MetroFramework.Controls.MetroButton();
+            this.metroButton22 = new MetroFramework.Controls.MetroButton();
+            this.metroButton23 = new MetroFramework.Controls.MetroButton();
+            this.metroButton31 = new MetroFramework.Controls.MetroButton();
+            this.metroButton32 = new MetroFramework.Controls.MetroButton();
+            this.metroButton33 = new MetroFramework.Controls.MetroButton();
+            this.metroButton34 = new MetroFramework.Controls.MetroButton();
+            this.metroButton35 = new MetroFramework.Controls.MetroButton();
+            this.metroButton36 = new MetroFramework.Controls.MetroButton();
+            this.metroButton37 = new MetroFramework.Controls.MetroButton();
+            this.metroButton38 = new MetroFramework.Controls.MetroButton();
+            this.metroButton39 = new MetroFramework.Controls.MetroButton();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.button_fanta = new MetroFramework.Controls.MetroButton();
+            this.button_chungha = new MetroFramework.Controls.MetroButton();
+            this.button_terra = new MetroFramework.Controls.MetroButton();
+            this.button_cider = new MetroFramework.Controls.MetroButton();
+            this.button_jinro = new MetroFramework.Controls.MetroButton();
+            this.button_hite = new MetroFramework.Controls.MetroButton();
+            this.button_cola = new MetroFramework.Controls.MetroButton();
+            this.button_start = new MetroFramework.Controls.MetroButton();
+            this.button_cass = new MetroFramework.Controls.MetroButton();
+            this.button_fresh = new MetroFramework.Controls.MetroButton();
+            this.button_cham = new MetroFramework.Controls.MetroButton();
+            this.listView1 = new System.Windows.Forms.ListView();
             this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader2 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader3 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.columnHeader4 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.textBox_sumcash = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -193,7 +188,7 @@ namespace WindowsFormsApp3
             // 
             // groupBox1
             // 
-            this.groupBox1.Controls.Add(this.label2);
+            this.groupBox1.Controls.Add(this.textBox_sumcash);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Location = new System.Drawing.Point(23, 508);
             this.groupBox1.Name = "groupBox1";
@@ -211,16 +206,6 @@ namespace WindowsFormsApp3
             this.label1.Size = new System.Drawing.Size(76, 19);
             this.label1.TabIndex = 10;
             this.label1.Text = "총 금액";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("굴림", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.label2.Location = new System.Drawing.Point(139, 186);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(78, 19);
-            this.label2.TabIndex = 10;
-            this.label2.Text = "8,000\\";
             // 
             // button1
             // 
@@ -304,6 +289,199 @@ namespace WindowsFormsApp3
             this.tabPage1.Text = "메인메뉴";
             this.tabPage1.UseVisualStyleBackColor = true;
             // 
+            // metroButton16
+            // 
+            this.metroButton16.DisplayFocus = true;
+            this.metroButton16.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton16.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton16.Location = new System.Drawing.Point(279, 266);
+            this.metroButton16.Name = "metroButton16";
+            this.metroButton16.Size = new System.Drawing.Size(75, 52);
+            this.metroButton16.TabIndex = 9;
+            this.metroButton16.Text = "1";
+            this.metroButton16.UseSelectable = true;
+            // 
+            // metroButton15
+            // 
+            this.metroButton15.DisplayFocus = true;
+            this.metroButton15.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton15.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton15.Location = new System.Drawing.Point(188, 266);
+            this.metroButton15.Name = "metroButton15";
+            this.metroButton15.Size = new System.Drawing.Size(75, 52);
+            this.metroButton15.TabIndex = 10;
+            this.metroButton15.Text = "1";
+            this.metroButton15.UseSelectable = true;
+            // 
+            // metroButton12
+            // 
+            this.metroButton12.DisplayFocus = true;
+            this.metroButton12.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton12.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton12.Location = new System.Drawing.Point(279, 188);
+            this.metroButton12.Name = "metroButton12";
+            this.metroButton12.Size = new System.Drawing.Size(75, 52);
+            this.metroButton12.TabIndex = 11;
+            this.metroButton12.Text = "1";
+            this.metroButton12.UseSelectable = true;
+            // 
+            // metroButton11
+            // 
+            this.metroButton11.DisplayFocus = true;
+            this.metroButton11.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton11.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton11.Location = new System.Drawing.Point(188, 188);
+            this.metroButton11.Name = "metroButton11";
+            this.metroButton11.Size = new System.Drawing.Size(75, 52);
+            this.metroButton11.TabIndex = 12;
+            this.metroButton11.Text = "1";
+            this.metroButton11.UseSelectable = true;
+            // 
+            // metroButton8
+            // 
+            this.metroButton8.DisplayFocus = true;
+            this.metroButton8.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton8.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton8.Location = new System.Drawing.Point(279, 111);
+            this.metroButton8.Name = "metroButton8";
+            this.metroButton8.Size = new System.Drawing.Size(75, 52);
+            this.metroButton8.TabIndex = 13;
+            this.metroButton8.Text = "1";
+            this.metroButton8.UseSelectable = true;
+            // 
+            // metroButton14
+            // 
+            this.metroButton14.DisplayFocus = true;
+            this.metroButton14.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton14.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton14.Location = new System.Drawing.Point(96, 266);
+            this.metroButton14.Name = "metroButton14";
+            this.metroButton14.Size = new System.Drawing.Size(75, 52);
+            this.metroButton14.TabIndex = 14;
+            this.metroButton14.Text = "1";
+            this.metroButton14.UseSelectable = true;
+            // 
+            // metroButton7
+            // 
+            this.metroButton7.DisplayFocus = true;
+            this.metroButton7.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton7.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton7.Location = new System.Drawing.Point(188, 111);
+            this.metroButton7.Name = "metroButton7";
+            this.metroButton7.Size = new System.Drawing.Size(75, 52);
+            this.metroButton7.TabIndex = 15;
+            this.metroButton7.Text = "1";
+            this.metroButton7.UseSelectable = true;
+            // 
+            // metroButton10
+            // 
+            this.metroButton10.DisplayFocus = true;
+            this.metroButton10.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton10.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton10.Location = new System.Drawing.Point(96, 188);
+            this.metroButton10.Name = "metroButton10";
+            this.metroButton10.Size = new System.Drawing.Size(75, 52);
+            this.metroButton10.TabIndex = 16;
+            this.metroButton10.Text = "1";
+            this.metroButton10.UseSelectable = true;
+            // 
+            // metroButton4
+            // 
+            this.metroButton4.DisplayFocus = true;
+            this.metroButton4.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton4.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton4.Location = new System.Drawing.Point(279, 34);
+            this.metroButton4.Name = "metroButton4";
+            this.metroButton4.Size = new System.Drawing.Size(75, 52);
+            this.metroButton4.TabIndex = 17;
+            this.metroButton4.Text = "고기4";
+            this.metroButton4.UseSelectable = true;
+            // 
+            // metroButton13
+            // 
+            this.metroButton13.DisplayFocus = true;
+            this.metroButton13.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton13.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton13.Location = new System.Drawing.Point(6, 266);
+            this.metroButton13.Name = "metroButton13";
+            this.metroButton13.Size = new System.Drawing.Size(75, 52);
+            this.metroButton13.TabIndex = 18;
+            this.metroButton13.Text = "1";
+            this.metroButton13.UseSelectable = true;
+            // 
+            // metroButton6
+            // 
+            this.metroButton6.DisplayFocus = true;
+            this.metroButton6.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton6.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton6.Location = new System.Drawing.Point(96, 111);
+            this.metroButton6.Name = "metroButton6";
+            this.metroButton6.Size = new System.Drawing.Size(75, 52);
+            this.metroButton6.TabIndex = 19;
+            this.metroButton6.Text = "고기6";
+            this.metroButton6.UseSelectable = true;
+            // 
+            // metroButton9
+            // 
+            this.metroButton9.DisplayFocus = true;
+            this.metroButton9.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton9.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton9.Location = new System.Drawing.Point(6, 188);
+            this.metroButton9.Name = "metroButton9";
+            this.metroButton9.Size = new System.Drawing.Size(75, 52);
+            this.metroButton9.TabIndex = 20;
+            this.metroButton9.Text = "1";
+            this.metroButton9.UseSelectable = true;
+            // 
+            // metroButton3
+            // 
+            this.metroButton3.DisplayFocus = true;
+            this.metroButton3.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton3.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton3.Location = new System.Drawing.Point(188, 34);
+            this.metroButton3.Name = "metroButton3";
+            this.metroButton3.Size = new System.Drawing.Size(75, 52);
+            this.metroButton3.TabIndex = 21;
+            this.metroButton3.Text = "고기3";
+            this.metroButton3.UseSelectable = true;
+            // 
+            // metroButton5
+            // 
+            this.metroButton5.DisplayFocus = true;
+            this.metroButton5.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton5.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton5.Location = new System.Drawing.Point(6, 111);
+            this.metroButton5.Name = "metroButton5";
+            this.metroButton5.Size = new System.Drawing.Size(75, 52);
+            this.metroButton5.TabIndex = 22;
+            this.metroButton5.Text = "고기5";
+            this.metroButton5.UseSelectable = true;
+            // 
+            // metroButton2
+            // 
+            this.metroButton2.DisplayFocus = true;
+            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton2.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton2.Location = new System.Drawing.Point(96, 34);
+            this.metroButton2.Name = "metroButton2";
+            this.metroButton2.Size = new System.Drawing.Size(75, 52);
+            this.metroButton2.TabIndex = 23;
+            this.metroButton2.Text = "고기2";
+            this.metroButton2.UseSelectable = true;
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.DisplayFocus = true;
+            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.metroButton1.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.metroButton1.Location = new System.Drawing.Point(6, 34);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(75, 52);
+            this.metroButton1.TabIndex = 24;
+            this.metroButton1.Text = "고기1";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
             // tabPage2
             // 
             this.tabPage2.Controls.Add(this.metroButton17);
@@ -329,47 +507,6 @@ namespace WindowsFormsApp3
             this.tabPage2.TabIndex = 1;
             this.tabPage2.Text = "사이드메뉴";
             this.tabPage2.UseVisualStyleBackColor = true;
-            // 
-            // listView_order
-            // 
-            this.listView_order.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.columnHeader2,
-            this.columnHeader3,
-            this.columnHeader4});
-            this.listView_order.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.listView_order.HideSelection = false;
-            this.listView_order.Location = new System.Drawing.Point(23, 64);
-            this.listView_order.Name = "listView_order";
-            this.listView_order.Size = new System.Drawing.Size(560, 375);
-            this.listView_order.TabIndex = 12;
-            this.listView_order.UseCompatibleStateImageBehavior = false;
-            this.listView_order.View = System.Windows.Forms.View.Details;
-            // 
-            // tabPage3
-            // 
-            this.tabPage3.Controls.Add(this.metroButton40);
-            this.tabPage3.Controls.Add(this.metroButton41);
-            this.tabPage3.Controls.Add(this.metroButton42);
-            this.tabPage3.Controls.Add(this.metroButton43);
-            this.tabPage3.Controls.Add(this.metroButton44);
-            this.tabPage3.Controls.Add(this.metroButton45);
-            this.tabPage3.Controls.Add(this.metroButton46);
-            this.tabPage3.Controls.Add(this.metroButton47);
-            this.tabPage3.Controls.Add(this.metroButton48);
-            this.tabPage3.Controls.Add(this.metroButton49);
-            this.tabPage3.Controls.Add(this.metroButton50);
-            this.tabPage3.Controls.Add(this.metroButton51);
-            this.tabPage3.Controls.Add(this.metroButton52);
-            this.tabPage3.Controls.Add(this.metroButton53);
-            this.tabPage3.Controls.Add(this.metroButton54);
-            this.tabPage3.Controls.Add(this.metroButton55);
-            this.tabPage3.Location = new System.Drawing.Point(4, 22);
-            this.tabPage3.Name = "tabPage3";
-            this.tabPage3.Size = new System.Drawing.Size(362, 354);
-            this.tabPage3.TabIndex = 2;
-            this.tabPage3.Text = "주류";
-            this.tabPage3.UseVisualStyleBackColor = true;
             // 
             // metroButton17
             // 
@@ -563,390 +700,184 @@ namespace WindowsFormsApp3
             this.metroButton39.Text = "2";
             this.metroButton39.UseSelectable = true;
             // 
-            // metroButton40
+            // tabPage3
             // 
-            this.metroButton40.DisplayFocus = true;
-            this.metroButton40.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton40.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton40.Location = new System.Drawing.Point(280, 267);
-            this.metroButton40.Name = "metroButton40";
-            this.metroButton40.Size = new System.Drawing.Size(75, 52);
-            this.metroButton40.TabIndex = 9;
-            this.metroButton40.Text = "1";
-            this.metroButton40.UseSelectable = true;
+            this.tabPage3.Controls.Add(this.button_fanta);
+            this.tabPage3.Controls.Add(this.button_chungha);
+            this.tabPage3.Controls.Add(this.button_terra);
+            this.tabPage3.Controls.Add(this.button_cider);
+            this.tabPage3.Controls.Add(this.button_jinro);
+            this.tabPage3.Controls.Add(this.button_hite);
+            this.tabPage3.Controls.Add(this.button_cola);
+            this.tabPage3.Controls.Add(this.button_start);
+            this.tabPage3.Controls.Add(this.button_cass);
+            this.tabPage3.Controls.Add(this.button_fresh);
+            this.tabPage3.Controls.Add(this.button_cham);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(362, 354);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "주류";
+            this.tabPage3.UseVisualStyleBackColor = true;
             // 
-            // metroButton41
+            // button_fanta
             // 
-            this.metroButton41.DisplayFocus = true;
-            this.metroButton41.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton41.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton41.Location = new System.Drawing.Point(189, 267);
-            this.metroButton41.Name = "metroButton41";
-            this.metroButton41.Size = new System.Drawing.Size(75, 52);
-            this.metroButton41.TabIndex = 10;
-            this.metroButton41.Text = "1";
-            this.metroButton41.UseSelectable = true;
+            this.button_fanta.DisplayFocus = true;
+            this.button_fanta.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_fanta.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_fanta.Location = new System.Drawing.Point(189, 189);
+            this.button_fanta.Name = "button_fanta";
+            this.button_fanta.Size = new System.Drawing.Size(75, 52);
+            this.button_fanta.TabIndex = 12;
+            this.button_fanta.Text = "환타";
+            this.button_fanta.UseSelectable = true;
+            this.button_fanta.Click += new System.EventHandler(this.button_fanta_Click);
             // 
-            // metroButton42
+            // button_chungha
             // 
-            this.metroButton42.DisplayFocus = true;
-            this.metroButton42.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton42.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton42.Location = new System.Drawing.Point(280, 189);
-            this.metroButton42.Name = "metroButton42";
-            this.metroButton42.Size = new System.Drawing.Size(75, 52);
-            this.metroButton42.TabIndex = 11;
-            this.metroButton42.Text = "1";
-            this.metroButton42.UseSelectable = true;
+            this.button_chungha.DisplayFocus = true;
+            this.button_chungha.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_chungha.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_chungha.Location = new System.Drawing.Point(280, 112);
+            this.button_chungha.Name = "button_chungha";
+            this.button_chungha.Size = new System.Drawing.Size(75, 52);
+            this.button_chungha.TabIndex = 13;
+            this.button_chungha.Text = "청하";
+            this.button_chungha.UseSelectable = true;
+            this.button_chungha.Click += new System.EventHandler(this.button_chungha_Click);
             // 
-            // metroButton43
+            // button_terra
             // 
-            this.metroButton43.DisplayFocus = true;
-            this.metroButton43.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton43.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton43.Location = new System.Drawing.Point(189, 189);
-            this.metroButton43.Name = "metroButton43";
-            this.metroButton43.Size = new System.Drawing.Size(75, 52);
-            this.metroButton43.TabIndex = 12;
-            this.metroButton43.Text = "1";
-            this.metroButton43.UseSelectable = true;
+            this.button_terra.DisplayFocus = true;
+            this.button_terra.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_terra.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_terra.Location = new System.Drawing.Point(189, 112);
+            this.button_terra.Name = "button_terra";
+            this.button_terra.Size = new System.Drawing.Size(75, 52);
+            this.button_terra.TabIndex = 15;
+            this.button_terra.Text = "테라";
+            this.button_terra.UseSelectable = true;
+            this.button_terra.Click += new System.EventHandler(this.button_terra_Click);
             // 
-            // metroButton44
+            // button_cider
             // 
-            this.metroButton44.DisplayFocus = true;
-            this.metroButton44.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton44.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton44.Location = new System.Drawing.Point(280, 112);
-            this.metroButton44.Name = "metroButton44";
-            this.metroButton44.Size = new System.Drawing.Size(75, 52);
-            this.metroButton44.TabIndex = 13;
-            this.metroButton44.Text = "1";
-            this.metroButton44.UseSelectable = true;
+            this.button_cider.DisplayFocus = true;
+            this.button_cider.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_cider.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_cider.Location = new System.Drawing.Point(97, 189);
+            this.button_cider.Name = "button_cider";
+            this.button_cider.Size = new System.Drawing.Size(75, 52);
+            this.button_cider.TabIndex = 16;
+            this.button_cider.Text = "사이다";
+            this.button_cider.UseSelectable = true;
+            this.button_cider.Click += new System.EventHandler(this.button_cider_Click);
             // 
-            // metroButton45
+            // button_jinro
             // 
-            this.metroButton45.DisplayFocus = true;
-            this.metroButton45.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton45.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton45.Location = new System.Drawing.Point(97, 267);
-            this.metroButton45.Name = "metroButton45";
-            this.metroButton45.Size = new System.Drawing.Size(75, 52);
-            this.metroButton45.TabIndex = 14;
-            this.metroButton45.Text = "1";
-            this.metroButton45.UseSelectable = true;
+            this.button_jinro.DisplayFocus = true;
+            this.button_jinro.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_jinro.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_jinro.Location = new System.Drawing.Point(280, 35);
+            this.button_jinro.Name = "button_jinro";
+            this.button_jinro.Size = new System.Drawing.Size(75, 52);
+            this.button_jinro.TabIndex = 17;
+            this.button_jinro.Text = "진로이즈백";
+            this.button_jinro.UseSelectable = true;
+            this.button_jinro.Click += new System.EventHandler(this.button_jinro_Click);
             // 
-            // metroButton46
+            // button_hite
             // 
-            this.metroButton46.DisplayFocus = true;
-            this.metroButton46.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton46.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton46.Location = new System.Drawing.Point(189, 112);
-            this.metroButton46.Name = "metroButton46";
-            this.metroButton46.Size = new System.Drawing.Size(75, 52);
-            this.metroButton46.TabIndex = 15;
-            this.metroButton46.Text = "1";
-            this.metroButton46.UseSelectable = true;
+            this.button_hite.DisplayFocus = true;
+            this.button_hite.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_hite.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_hite.Location = new System.Drawing.Point(97, 112);
+            this.button_hite.Name = "button_hite";
+            this.button_hite.Size = new System.Drawing.Size(75, 52);
+            this.button_hite.TabIndex = 19;
+            this.button_hite.Text = "하이트";
+            this.button_hite.UseSelectable = true;
+            this.button_hite.Click += new System.EventHandler(this.button_hite_Click);
             // 
-            // metroButton47
+            // button_cola
             // 
-            this.metroButton47.DisplayFocus = true;
-            this.metroButton47.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton47.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton47.Location = new System.Drawing.Point(97, 189);
-            this.metroButton47.Name = "metroButton47";
-            this.metroButton47.Size = new System.Drawing.Size(75, 52);
-            this.metroButton47.TabIndex = 16;
-            this.metroButton47.Text = "1";
-            this.metroButton47.UseSelectable = true;
+            this.button_cola.DisplayFocus = true;
+            this.button_cola.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_cola.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_cola.Location = new System.Drawing.Point(7, 189);
+            this.button_cola.Name = "button_cola";
+            this.button_cola.Size = new System.Drawing.Size(75, 52);
+            this.button_cola.TabIndex = 20;
+            this.button_cola.Text = "콜라";
+            this.button_cola.UseSelectable = true;
+            this.button_cola.Click += new System.EventHandler(this.button_cola_Click);
             // 
-            // metroButton48
+            // button_start
             // 
-            this.metroButton48.DisplayFocus = true;
-            this.metroButton48.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton48.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton48.Location = new System.Drawing.Point(280, 35);
-            this.metroButton48.Name = "metroButton48";
-            this.metroButton48.Size = new System.Drawing.Size(75, 52);
-            this.metroButton48.TabIndex = 17;
-            this.metroButton48.Text = "1";
-            this.metroButton48.UseSelectable = true;
+            this.button_start.DisplayFocus = true;
+            this.button_start.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_start.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_start.Location = new System.Drawing.Point(189, 35);
+            this.button_start.Name = "button_start";
+            this.button_start.Size = new System.Drawing.Size(75, 52);
+            this.button_start.TabIndex = 21;
+            this.button_start.Text = "처음처럼";
+            this.button_start.UseSelectable = true;
+            this.button_start.Click += new System.EventHandler(this.button_start_Click);
             // 
-            // metroButton49
+            // button_cass
             // 
-            this.metroButton49.DisplayFocus = true;
-            this.metroButton49.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton49.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton49.Location = new System.Drawing.Point(7, 267);
-            this.metroButton49.Name = "metroButton49";
-            this.metroButton49.Size = new System.Drawing.Size(75, 52);
-            this.metroButton49.TabIndex = 18;
-            this.metroButton49.Text = "1";
-            this.metroButton49.UseSelectable = true;
+            this.button_cass.DisplayFocus = true;
+            this.button_cass.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_cass.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_cass.Location = new System.Drawing.Point(7, 112);
+            this.button_cass.Name = "button_cass";
+            this.button_cass.Size = new System.Drawing.Size(75, 52);
+            this.button_cass.TabIndex = 22;
+            this.button_cass.Text = "카스";
+            this.button_cass.UseSelectable = true;
+            this.button_cass.Click += new System.EventHandler(this.button_cass_Click);
             // 
-            // metroButton50
+            // button_fresh
             // 
-            this.metroButton50.DisplayFocus = true;
-            this.metroButton50.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton50.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton50.Location = new System.Drawing.Point(97, 112);
-            this.metroButton50.Name = "metroButton50";
-            this.metroButton50.Size = new System.Drawing.Size(75, 52);
-            this.metroButton50.TabIndex = 19;
-            this.metroButton50.Text = "1";
-            this.metroButton50.UseSelectable = true;
+            this.button_fresh.DisplayFocus = true;
+            this.button_fresh.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_fresh.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_fresh.Location = new System.Drawing.Point(97, 35);
+            this.button_fresh.Name = "button_fresh";
+            this.button_fresh.Size = new System.Drawing.Size(75, 52);
+            this.button_fresh.TabIndex = 23;
+            this.button_fresh.Text = "참이슬(후레쉬)";
+            this.button_fresh.UseSelectable = true;
+            this.button_fresh.Click += new System.EventHandler(this.button_fresh_Click);
             // 
-            // metroButton51
+            // button_cham
             // 
-            this.metroButton51.DisplayFocus = true;
-            this.metroButton51.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton51.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton51.Location = new System.Drawing.Point(7, 189);
-            this.metroButton51.Name = "metroButton51";
-            this.metroButton51.Size = new System.Drawing.Size(75, 52);
-            this.metroButton51.TabIndex = 20;
-            this.metroButton51.Text = "1";
-            this.metroButton51.UseSelectable = true;
+            this.button_cham.DisplayFocus = true;
+            this.button_cham.FontSize = MetroFramework.MetroButtonSize.Medium;
+            this.button_cham.FontWeight = MetroFramework.MetroButtonWeight.Regular;
+            this.button_cham.Location = new System.Drawing.Point(7, 35);
+            this.button_cham.Name = "button_cham";
+            this.button_cham.Size = new System.Drawing.Size(75, 52);
+            this.button_cham.TabIndex = 24;
+            this.button_cham.Text = "참이슬";
+            this.button_cham.UseSelectable = true;
+            this.button_cham.Click += new System.EventHandler(this.button_cham_Click);
             // 
-            // metroButton52
+            // listView1
             // 
-            this.metroButton52.DisplayFocus = true;
-            this.metroButton52.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton52.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton52.Location = new System.Drawing.Point(189, 35);
-            this.metroButton52.Name = "metroButton52";
-            this.metroButton52.Size = new System.Drawing.Size(75, 52);
-            this.metroButton52.TabIndex = 21;
-            this.metroButton52.Text = "1";
-            this.metroButton52.UseSelectable = true;
-            // 
-            // metroButton53
-            // 
-            this.metroButton53.DisplayFocus = true;
-            this.metroButton53.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton53.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton53.Location = new System.Drawing.Point(7, 112);
-            this.metroButton53.Name = "metroButton53";
-            this.metroButton53.Size = new System.Drawing.Size(75, 52);
-            this.metroButton53.TabIndex = 22;
-            this.metroButton53.Text = "1";
-            this.metroButton53.UseSelectable = true;
-            // 
-            // metroButton54
-            // 
-            this.metroButton54.DisplayFocus = true;
-            this.metroButton54.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton54.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton54.Location = new System.Drawing.Point(97, 35);
-            this.metroButton54.Name = "metroButton54";
-            this.metroButton54.Size = new System.Drawing.Size(75, 52);
-            this.metroButton54.TabIndex = 23;
-            this.metroButton54.Text = "1";
-            this.metroButton54.UseSelectable = true;
-            // 
-            // metroButton55
-            // 
-            this.metroButton55.DisplayFocus = true;
-            this.metroButton55.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton55.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton55.Location = new System.Drawing.Point(7, 35);
-            this.metroButton55.Name = "metroButton55";
-            this.metroButton55.Size = new System.Drawing.Size(75, 52);
-            this.metroButton55.TabIndex = 24;
-            this.metroButton55.Text = "3";
-            this.metroButton55.UseSelectable = true;
-            // 
-            // metroButton16
-            // 
-            this.metroButton16.DisplayFocus = true;
-            this.metroButton16.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton16.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton16.Location = new System.Drawing.Point(279, 266);
-            this.metroButton16.Name = "metroButton16";
-            this.metroButton16.Size = new System.Drawing.Size(75, 52);
-            this.metroButton16.TabIndex = 9;
-            this.metroButton16.Text = "1";
-            this.metroButton16.UseSelectable = true;
-            // 
-            // metroButton15
-            // 
-            this.metroButton15.DisplayFocus = true;
-            this.metroButton15.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton15.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton15.Location = new System.Drawing.Point(188, 266);
-            this.metroButton15.Name = "metroButton15";
-            this.metroButton15.Size = new System.Drawing.Size(75, 52);
-            this.metroButton15.TabIndex = 10;
-            this.metroButton15.Text = "1";
-            this.metroButton15.UseSelectable = true;
-            // 
-            // metroButton12
-            // 
-            this.metroButton12.DisplayFocus = true;
-            this.metroButton12.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton12.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton12.Location = new System.Drawing.Point(279, 188);
-            this.metroButton12.Name = "metroButton12";
-            this.metroButton12.Size = new System.Drawing.Size(75, 52);
-            this.metroButton12.TabIndex = 11;
-            this.metroButton12.Text = "1";
-            this.metroButton12.UseSelectable = true;
-            // 
-            // metroButton11
-            // 
-            this.metroButton11.DisplayFocus = true;
-            this.metroButton11.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton11.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton11.Location = new System.Drawing.Point(188, 188);
-            this.metroButton11.Name = "metroButton11";
-            this.metroButton11.Size = new System.Drawing.Size(75, 52);
-            this.metroButton11.TabIndex = 12;
-            this.metroButton11.Text = "1";
-            this.metroButton11.UseSelectable = true;
-            // 
-            // metroButton8
-            // 
-            this.metroButton8.DisplayFocus = true;
-            this.metroButton8.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton8.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton8.Location = new System.Drawing.Point(279, 111);
-            this.metroButton8.Name = "metroButton8";
-            this.metroButton8.Size = new System.Drawing.Size(75, 52);
-            this.metroButton8.TabIndex = 13;
-            this.metroButton8.Text = "1";
-            this.metroButton8.UseSelectable = true;
-            // 
-            // metroButton14
-            // 
-            this.metroButton14.DisplayFocus = true;
-            this.metroButton14.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton14.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton14.Location = new System.Drawing.Point(96, 266);
-            this.metroButton14.Name = "metroButton14";
-            this.metroButton14.Size = new System.Drawing.Size(75, 52);
-            this.metroButton14.TabIndex = 14;
-            this.metroButton14.Text = "1";
-            this.metroButton14.UseSelectable = true;
-            // 
-            // metroButton7
-            // 
-            this.metroButton7.DisplayFocus = true;
-            this.metroButton7.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton7.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton7.Location = new System.Drawing.Point(188, 111);
-            this.metroButton7.Name = "metroButton7";
-            this.metroButton7.Size = new System.Drawing.Size(75, 52);
-            this.metroButton7.TabIndex = 15;
-            this.metroButton7.Text = "1";
-            this.metroButton7.UseSelectable = true;
-            // 
-            // metroButton10
-            // 
-            this.metroButton10.DisplayFocus = true;
-            this.metroButton10.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton10.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton10.Location = new System.Drawing.Point(96, 188);
-            this.metroButton10.Name = "metroButton10";
-            this.metroButton10.Size = new System.Drawing.Size(75, 52);
-            this.metroButton10.TabIndex = 16;
-            this.metroButton10.Text = "1";
-            this.metroButton10.UseSelectable = true;
-            // 
-            // metroButton4
-            // 
-            this.metroButton4.DisplayFocus = true;
-            this.metroButton4.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton4.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton4.Location = new System.Drawing.Point(279, 34);
-            this.metroButton4.Name = "metroButton4";
-            this.metroButton4.Size = new System.Drawing.Size(75, 52);
-            this.metroButton4.TabIndex = 17;
-            this.metroButton4.Text = "1";
-            this.metroButton4.UseSelectable = true;
-            // 
-            // metroButton13
-            // 
-            this.metroButton13.DisplayFocus = true;
-            this.metroButton13.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton13.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton13.Location = new System.Drawing.Point(6, 266);
-            this.metroButton13.Name = "metroButton13";
-            this.metroButton13.Size = new System.Drawing.Size(75, 52);
-            this.metroButton13.TabIndex = 18;
-            this.metroButton13.Text = "1";
-            this.metroButton13.UseSelectable = true;
-            // 
-            // metroButton6
-            // 
-            this.metroButton6.DisplayFocus = true;
-            this.metroButton6.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton6.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton6.Location = new System.Drawing.Point(96, 111);
-            this.metroButton6.Name = "metroButton6";
-            this.metroButton6.Size = new System.Drawing.Size(75, 52);
-            this.metroButton6.TabIndex = 19;
-            this.metroButton6.Text = "1";
-            this.metroButton6.UseSelectable = true;
-            // 
-            // metroButton9
-            // 
-            this.metroButton9.DisplayFocus = true;
-            this.metroButton9.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton9.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton9.Location = new System.Drawing.Point(6, 188);
-            this.metroButton9.Name = "metroButton9";
-            this.metroButton9.Size = new System.Drawing.Size(75, 52);
-            this.metroButton9.TabIndex = 20;
-            this.metroButton9.Text = "1";
-            this.metroButton9.UseSelectable = true;
-            // 
-            // metroButton3
-            // 
-            this.metroButton3.DisplayFocus = true;
-            this.metroButton3.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton3.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton3.Location = new System.Drawing.Point(188, 34);
-            this.metroButton3.Name = "metroButton3";
-            this.metroButton3.Size = new System.Drawing.Size(75, 52);
-            this.metroButton3.TabIndex = 21;
-            this.metroButton3.Text = "1";
-            this.metroButton3.UseSelectable = true;
-            // 
-            // metroButton5
-            // 
-            this.metroButton5.DisplayFocus = true;
-            this.metroButton5.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton5.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton5.Location = new System.Drawing.Point(6, 111);
-            this.metroButton5.Name = "metroButton5";
-            this.metroButton5.Size = new System.Drawing.Size(75, 52);
-            this.metroButton5.TabIndex = 22;
-            this.metroButton5.Text = "1";
-            this.metroButton5.UseSelectable = true;
-            // 
-            // metroButton2
-            // 
-            this.metroButton2.DisplayFocus = true;
-            this.metroButton2.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton2.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton2.Location = new System.Drawing.Point(96, 34);
-            this.metroButton2.Name = "metroButton2";
-            this.metroButton2.Size = new System.Drawing.Size(75, 52);
-            this.metroButton2.TabIndex = 23;
-            this.metroButton2.Text = "1";
-            this.metroButton2.UseSelectable = true;
-            // 
-            // metroButton1
-            // 
-            this.metroButton1.DisplayFocus = true;
-            this.metroButton1.FontSize = MetroFramework.MetroButtonSize.Medium;
-            this.metroButton1.FontWeight = MetroFramework.MetroButtonWeight.Regular;
-            this.metroButton1.Location = new System.Drawing.Point(6, 34);
-            this.metroButton1.Name = "metroButton1";
-            this.metroButton1.Size = new System.Drawing.Size(75, 52);
-            this.metroButton1.TabIndex = 24;
-            this.metroButton1.Text = "1";
-            this.metroButton1.UseSelectable = true;
-            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.columnHeader1,
+            this.columnHeader2,
+            this.columnHeader3,
+            this.columnHeader4});
+            this.listView1.Font = new System.Drawing.Font("굴림", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.listView1.HideSelection = false;
+            this.listView1.Location = new System.Drawing.Point(23, 64);
+            this.listView1.Name = "listView1";
+            this.listView1.Size = new System.Drawing.Size(560, 375);
+            this.listView1.TabIndex = 12;
+            this.listView1.UseCompatibleStateImageBehavior = false;
+            this.listView1.View = System.Windows.Forms.View.Details;
             // 
             // columnHeader1
             // 
@@ -968,13 +899,23 @@ namespace WindowsFormsApp3
             this.columnHeader4.Text = "비고";
             this.columnHeader4.Width = 95;
             // 
-            // Form4
+            // textBox_sumcash
+            // 
+            this.textBox_sumcash.Font = new System.Drawing.Font("굴림", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.textBox_sumcash.Location = new System.Drawing.Point(96, 180);
+            this.textBox_sumcash.Multiline = true;
+            this.textBox_sumcash.Name = "textBox_sumcash";
+            this.textBox_sumcash.Size = new System.Drawing.Size(125, 39);
+            this.textBox_sumcash.TabIndex = 11;
+            this.textBox_sumcash.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // 메뉴
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 750);
             this.Controls.Add(this.metroButton24);
-            this.Controls.Add(this.listView_order);
+            this.Controls.Add(this.listView1);
             this.Controls.Add(this.tabControl1);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.button4);
@@ -987,7 +928,7 @@ namespace WindowsFormsApp3
             this.Controls.Add(this.metroButton27);
             this.Controls.Add(this.metroButton26);
             this.Controls.Add(this.metroButton25);
-            this.Name = "Form4";
+            this.Name = "메뉴";
             this.Text = "메뉴";
             this.Load += new System.EventHandler(this.Form4_Load);
             this.groupBox1.ResumeLayout(false);
@@ -1010,7 +951,6 @@ namespace WindowsFormsApp3
         private MetroFramework.Controls.MetroButton metroButton30;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button2;
         private System.Windows.Forms.Button button3;
@@ -1019,7 +959,7 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
         private System.Windows.Forms.TabPage tabPage3;
-        private System.Windows.Forms.ListView listView_order;
+        private System.Windows.Forms.ListView listView1;
         private MetroFramework.Controls.MetroButton metroButton16;
         private MetroFramework.Controls.MetroButton metroButton15;
         private MetroFramework.Controls.MetroButton metroButton12;
@@ -1052,25 +992,21 @@ namespace WindowsFormsApp3
         private MetroFramework.Controls.MetroButton metroButton37;
         private MetroFramework.Controls.MetroButton metroButton38;
         private MetroFramework.Controls.MetroButton metroButton39;
-        private MetroFramework.Controls.MetroButton metroButton40;
-        private MetroFramework.Controls.MetroButton metroButton41;
-        private MetroFramework.Controls.MetroButton metroButton42;
-        private MetroFramework.Controls.MetroButton metroButton43;
-        private MetroFramework.Controls.MetroButton metroButton44;
-        private MetroFramework.Controls.MetroButton metroButton45;
-        private MetroFramework.Controls.MetroButton metroButton46;
-        private MetroFramework.Controls.MetroButton metroButton47;
-        private MetroFramework.Controls.MetroButton metroButton48;
-        private MetroFramework.Controls.MetroButton metroButton49;
-        private MetroFramework.Controls.MetroButton metroButton50;
-        private MetroFramework.Controls.MetroButton metroButton51;
-        private MetroFramework.Controls.MetroButton metroButton52;
-        private MetroFramework.Controls.MetroButton metroButton53;
-        private MetroFramework.Controls.MetroButton metroButton54;
-        private MetroFramework.Controls.MetroButton metroButton55;
+        private MetroFramework.Controls.MetroButton button_fanta;
+        private MetroFramework.Controls.MetroButton button_chungha;
+        private MetroFramework.Controls.MetroButton button_terra;
+        private MetroFramework.Controls.MetroButton button_cider;
+        private MetroFramework.Controls.MetroButton button_jinro;
+        private MetroFramework.Controls.MetroButton button_hite;
+        private MetroFramework.Controls.MetroButton button_cola;
+        private MetroFramework.Controls.MetroButton button_start;
+        private MetroFramework.Controls.MetroButton button_cass;
+        private MetroFramework.Controls.MetroButton button_fresh;
+        private MetroFramework.Controls.MetroButton button_cham;
         private System.Windows.Forms.ColumnHeader columnHeader1;
         private System.Windows.Forms.ColumnHeader columnHeader2;
         private System.Windows.Forms.ColumnHeader columnHeader3;
         private System.Windows.Forms.ColumnHeader columnHeader4;
+        private System.Windows.Forms.TextBox textBox_sumcash;
     }
 }
