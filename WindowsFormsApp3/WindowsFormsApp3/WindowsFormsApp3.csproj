@@ -99,7 +99,6 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-<<<<<<< HEAD
     <Compile Include="재고관리_검색.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -112,11 +111,6 @@
     <Compile Include="재고관리_수정.Designer.cs">
       <DependentUpon>재고관리_수정.cs</DependentUpon>
     </Compile>
-=======
-    <EmbeddedResource Include="매출관리.resx">
-      <DependentUpon>매출관리.cs</DependentUpon>
-    </EmbeddedResource>
->>>>>>> 14bb4116ab61c0de305b010ad21417a6baea226c
     <EmbeddedResource Include="메인메뉴.resx">
       <DependentUpon>메인메뉴.cs</DependentUpon>
     </EmbeddedResource>
