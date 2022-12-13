@@ -16,18 +16,31 @@ namespace WindowsFormsApp3
         {
             InitializeComponent();
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            //새로고침 코드 여기에다가 넣깅~
+        }
 
         private void metroButton1_Click(object sender, EventArgs e)
         {
+            //상품 관리 버튼
             상품관리 newform2 = new 상품관리();
             newform2.ShowDialog();
 
             //상품 정보 넣는 창에서는 이거 쓰지 말고 따른 방식으로 꺼졌따켜졌다 쓰기~
         }
 
-        private void Form1_Load(object sender, EventArgs e)
+        private void metroButton2_Click(object sender, EventArgs e)
         {
-          //새로고침 코드 여기에다가 넣깅~
+            //재고 관리 버튼
+            재고관리 stockform = new 재고관리();
+            stockform.ShowDialog();
+        }
+        private void metroButton3_Click(object sender, EventArgs e)
+        {
+            //매출 관리 버튼
+            매출관리 salesform = new 매출관리();
+            salesform.ShowDialog();
         }
 
         private void metroGrid1_Click(object sender, EventArgs e)
@@ -71,5 +84,7 @@ namespace WindowsFormsApp3
             메뉴 Menuform = new 메뉴();
             Menuform.ShowDialog();
         }
+
+
     }
 }

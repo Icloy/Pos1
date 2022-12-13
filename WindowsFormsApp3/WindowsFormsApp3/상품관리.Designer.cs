@@ -78,7 +78,7 @@
             this.DBGrid.EnableHeadersVisualStyles = false;
             this.DBGrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
             this.DBGrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
-            this.DBGrid.Location = new System.Drawing.Point(23, 76);
+            this.DBGrid.Location = new System.Drawing.Point(23, 63);
             this.DBGrid.Name = "DBGrid";
             this.DBGrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
@@ -113,9 +113,9 @@
             // 
             // 
             this.txtcode.CustomButton.Image = null;
-            this.txtcode.CustomButton.Location = new System.Drawing.Point(37, 1);
+            this.txtcode.CustomButton.Location = new System.Drawing.Point(53, 1);
             this.txtcode.CustomButton.Name = "";
-            this.txtcode.CustomButton.Size = new System.Drawing.Size(15, 14);
+            this.txtcode.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtcode.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtcode.CustomButton.TabIndex = 1;
             this.txtcode.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -143,9 +143,9 @@
             // 
             // 
             this.txtname.CustomButton.Image = null;
-            this.txtname.CustomButton.Location = new System.Drawing.Point(37, 1);
+            this.txtname.CustomButton.Location = new System.Drawing.Point(53, 1);
             this.txtname.CustomButton.Name = "";
-            this.txtname.CustomButton.Size = new System.Drawing.Size(15, 14);
+            this.txtname.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtname.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtname.CustomButton.TabIndex = 1;
             this.txtname.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -182,9 +182,9 @@
             // 
             // 
             this.txtwsprice.CustomButton.Image = null;
-            this.txtwsprice.CustomButton.Location = new System.Drawing.Point(37, 1);
+            this.txtwsprice.CustomButton.Location = new System.Drawing.Point(53, 1);
             this.txtwsprice.CustomButton.Name = "";
-            this.txtwsprice.CustomButton.Size = new System.Drawing.Size(15, 14);
+            this.txtwsprice.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtwsprice.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtwsprice.CustomButton.TabIndex = 1;
             this.txtwsprice.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -222,9 +222,9 @@
             // 
             // 
             this.txtsale.CustomButton.Image = null;
-            this.txtsale.CustomButton.Location = new System.Drawing.Point(37, 1);
+            this.txtsale.CustomButton.Location = new System.Drawing.Point(53, 1);
             this.txtsale.CustomButton.Name = "";
-            this.txtsale.CustomButton.Size = new System.Drawing.Size(15, 14);
+            this.txtsale.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtsale.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtsale.CustomButton.TabIndex = 1;
             this.txtsale.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -325,9 +325,9 @@
             // 
             // 
             this.txtpval.CustomButton.Image = null;
-            this.txtpval.CustomButton.Location = new System.Drawing.Point(37, 1);
+            this.txtpval.CustomButton.Location = new System.Drawing.Point(53, 1);
             this.txtpval.CustomButton.Name = "";
-            this.txtpval.CustomButton.Size = new System.Drawing.Size(15, 14);
+            this.txtpval.CustomButton.Size = new System.Drawing.Size(21, 21);
             this.txtpval.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.txtpval.CustomButton.TabIndex = 1;
             this.txtpval.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -349,7 +349,7 @@
             this.txtpval.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.txtpval.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // Form2
+            // 상품관리
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -370,7 +370,7 @@
             this.Controls.Add(this.txtcode);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.DBGrid);
-            this.Name = "Form2";
+            this.Name = "상품관리";
             this.Text = "상품관리";
             this.Load += new System.EventHandler(this.Form2_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DBGrid)).EndInit();

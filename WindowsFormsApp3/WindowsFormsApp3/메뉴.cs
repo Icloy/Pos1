@@ -19,6 +19,12 @@ namespace WindowsFormsApp3
             InitializeComponent();
         }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //주문 버튼
+
+        }
+
         private void metroButton4_Click(object sender, EventArgs e)
         {
 
@@ -44,11 +50,6 @@ namespace WindowsFormsApp3
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            //주문 버튼
-
-        }
 
         private void Form4_Load(object sender, EventArgs e)
         {
