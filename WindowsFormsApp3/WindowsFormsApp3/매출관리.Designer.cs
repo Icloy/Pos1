@@ -29,25 +29,26 @@ namespace WindowsFormsApp3
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.monthCalendar1 = new System.Windows.Forms.MonthCalendar();
             this.htmlLabel1 = new MetroFramework.Drawing.Html.HtmlLabel();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.metroLabel2 = new MetroFramework.Controls.MetroLabel();
-            this.selDate = new MetroFramework.Controls.MetroLabel();
-            this.htmlLabel3 = new MetroFramework.Drawing.Html.HtmlLabel();
-            this.listView1 = new System.Windows.Forms.ListView();
-            this.columnHeader1 = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.day = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.sales = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
-            this.updatesalesBtn = new MetroFramework.Controls.MetroButton();
-            this.totalpricetxtbox = new MetroFramework.Controls.MetroTextBox();
             this.htmlLabel2 = new MetroFramework.Drawing.Html.HtmlLabel();
+            this.totalpricetxtbox = new MetroFramework.Controls.MetroTextBox();
+            this.selDate = new MetroFramework.Controls.MetroLabel();
+            this.updatesalesBtn = new MetroFramework.Controls.MetroButton();
+            this.metroButton1 = new MetroFramework.Controls.MetroButton();
+            this.dbgrid = new MetroFramework.Controls.MetroGrid();
             this.groupBox1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dbgrid)).BeginInit();
             this.SuspendLayout();
             // 
             // monthCalendar1
             // 
-            this.monthCalendar1.Location = new System.Drawing.Point(30, 100);
+            this.monthCalendar1.Location = new System.Drawing.Point(43, 150);
+            this.monthCalendar1.Margin = new System.Windows.Forms.Padding(13, 14, 13, 14);
             this.monthCalendar1.Name = "monthCalendar1";
             this.monthCalendar1.TabIndex = 2;
             this.monthCalendar1.DateSelected += new System.Windows.Forms.DateRangeEventHandler(this.monthCalendar1_DateSelected);
@@ -55,107 +56,50 @@ namespace WindowsFormsApp3
             // htmlLabel1
             // 
             this.htmlLabel1.AutoScroll = true;
-            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(121, 30);
+            this.htmlLabel1.AutoScrollMinSize = new System.Drawing.Size(170, 40);
             this.htmlLabel1.AutoSize = false;
             this.htmlLabel1.BackColor = System.Drawing.SystemColors.Window;
             this.htmlLabel1.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.htmlLabel1.Location = new System.Drawing.Point(34, 65);
+            this.htmlLabel1.Location = new System.Drawing.Point(43, 163);
+            this.htmlLabel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.htmlLabel1.Name = "htmlLabel1";
-            this.htmlLabel1.Size = new System.Drawing.Size(132, 32);
+            this.htmlLabel1.Size = new System.Drawing.Size(189, 48);
             this.htmlLabel1.TabIndex = 3;
             this.htmlLabel1.Text = "매출 금액 : ";
             this.htmlLabel1.UseWaitCursor = true;
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.metroButton1);
             this.groupBox1.Controls.Add(this.htmlLabel2);
             this.groupBox1.Controls.Add(this.totalpricetxtbox);
             this.groupBox1.Controls.Add(this.updatesalesBtn);
-            this.groupBox1.Controls.Add(this.metroLabel2);
             this.groupBox1.Controls.Add(this.selDate);
-            this.groupBox1.Controls.Add(this.htmlLabel3);
             this.groupBox1.Controls.Add(this.htmlLabel1);
-            this.groupBox1.Location = new System.Drawing.Point(262, 70);
+            this.groupBox1.Location = new System.Drawing.Point(374, 105);
+            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(566, 221);
+            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.groupBox1.Size = new System.Drawing.Size(809, 332);
             this.groupBox1.TabIndex = 5;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "매출 관리";
             this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
-            // metroLabel2
+            // htmlLabel2
             // 
-            this.metroLabel2.Location = new System.Drawing.Point(150, 120);
-            this.metroLabel2.Name = "metroLabel2";
-            this.metroLabel2.Size = new System.Drawing.Size(411, 32);
-            this.metroLabel2.TabIndex = 9;
-            this.metroLabel2.Text = "*";
-            this.metroLabel2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // selDate
-            // 
-            this.selDate.Cursor = System.Windows.Forms.Cursors.Default;
-            this.selDate.FontSize = MetroFramework.MetroLabelSize.Tall;
-            this.selDate.Location = new System.Drawing.Point(150, 23);
-            this.selDate.Name = "selDate";
-            this.selDate.Size = new System.Drawing.Size(415, 31);
-            this.selDate.Style = MetroFramework.MetroColorStyle.Black;
-            this.selDate.TabIndex = 7;
-            this.selDate.Text = "*";
-            this.selDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // htmlLabel3
-            // 
-            this.htmlLabel3.AutoScroll = true;
-            this.htmlLabel3.AutoScrollMinSize = new System.Drawing.Size(121, 30);
-            this.htmlLabel3.AutoSize = false;
-            this.htmlLabel3.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel3.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.htmlLabel3.Location = new System.Drawing.Point(34, 120);
-            this.htmlLabel3.Name = "htmlLabel3";
-            this.htmlLabel3.Size = new System.Drawing.Size(132, 32);
-            this.htmlLabel3.TabIndex = 5;
-            this.htmlLabel3.Text = "매출 금액 : ";
-            this.htmlLabel3.UseWaitCursor = true;
-            // 
-            // listView1
-            // 
-            this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
-            this.columnHeader1,
-            this.day,
-            this.sales});
-            this.listView1.HideSelection = false;
-            this.listView1.Location = new System.Drawing.Point(30, 297);
-            this.listView1.Name = "listView1";
-            this.listView1.Size = new System.Drawing.Size(798, 348);
-            this.listView1.TabIndex = 6;
-            this.listView1.UseCompatibleStateImageBehavior = false;
-            this.listView1.View = System.Windows.Forms.View.Details;
-            // 
-            // columnHeader1
-            // 
-            this.columnHeader1.Width = 0;
-            // 
-            // day
-            // 
-            this.day.Text = "날짜";
-            this.day.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.day.Width = 399;
-            // 
-            // sales
-            // 
-            this.sales.Text = "매출";
-            this.sales.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.sales.Width = 395;
-            // 
-            // updatesalesBtn
-            // 
-            this.updatesalesBtn.Location = new System.Drawing.Point(462, 173);
-            this.updatesalesBtn.Name = "updatesalesBtn";
-            this.updatesalesBtn.Size = new System.Drawing.Size(98, 42);
-            this.updatesalesBtn.TabIndex = 10;
-            this.updatesalesBtn.Text = "매출 수정";
-            this.updatesalesBtn.UseSelectable = true;
+            this.htmlLabel2.AutoScroll = true;
+            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(170, 40);
+            this.htmlLabel2.AutoSize = false;
+            this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
+            this.htmlLabel2.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
+            this.htmlLabel2.Location = new System.Drawing.Point(43, 68);
+            this.htmlLabel2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.htmlLabel2.Name = "htmlLabel2";
+            this.htmlLabel2.Size = new System.Drawing.Size(189, 48);
+            this.htmlLabel2.TabIndex = 4;
+            this.htmlLabel2.Text = "선택 날짜 : ";
+            this.htmlLabel2.UseWaitCursor = true;
             // 
             // totalpricetxtbox
             // 
@@ -163,9 +107,10 @@ namespace WindowsFormsApp3
             // 
             // 
             this.totalpricetxtbox.CustomButton.Image = null;
-            this.totalpricetxtbox.CustomButton.Location = new System.Drawing.Point(143, 1);
+            this.totalpricetxtbox.CustomButton.Location = new System.Drawing.Point(791, 3);
+            this.totalpricetxtbox.CustomButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.totalpricetxtbox.CustomButton.Name = "";
-            this.totalpricetxtbox.CustomButton.Size = new System.Drawing.Size(21, 21);
+            this.totalpricetxtbox.CustomButton.Size = new System.Drawing.Size(41, 44);
             this.totalpricetxtbox.CustomButton.Style = MetroFramework.MetroColorStyle.Blue;
             this.totalpricetxtbox.CustomButton.TabIndex = 1;
             this.totalpricetxtbox.CustomButton.Theme = MetroFramework.MetroThemeStyle.Light;
@@ -174,7 +119,8 @@ namespace WindowsFormsApp3
             this.totalpricetxtbox.FontSize = MetroFramework.MetroTextBoxSize.Medium;
             this.totalpricetxtbox.Lines = new string[] {
         "*"};
-            this.totalpricetxtbox.Location = new System.Drawing.Point(150, 68);
+            this.totalpricetxtbox.Location = new System.Drawing.Point(208, 167);
+            this.totalpricetxtbox.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.totalpricetxtbox.MaxLength = 32767;
             this.totalpricetxtbox.Name = "totalpricetxtbox";
             this.totalpricetxtbox.PasswordChar = '\0';
@@ -183,7 +129,7 @@ namespace WindowsFormsApp3
             this.totalpricetxtbox.SelectionLength = 0;
             this.totalpricetxtbox.SelectionStart = 0;
             this.totalpricetxtbox.ShortcutsEnabled = true;
-            this.totalpricetxtbox.Size = new System.Drawing.Size(410, 23);
+            this.totalpricetxtbox.Size = new System.Drawing.Size(586, 34);
             this.totalpricetxtbox.TabIndex = 11;
             this.totalpricetxtbox.Text = "*";
             this.totalpricetxtbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -191,31 +137,103 @@ namespace WindowsFormsApp3
             this.totalpricetxtbox.WaterMarkColor = System.Drawing.Color.FromArgb(((int)(((byte)(109)))), ((int)(((byte)(109)))), ((int)(((byte)(109)))));
             this.totalpricetxtbox.WaterMarkFont = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Pixel);
             // 
-            // htmlLabel2
+            // selDate
             // 
-            this.htmlLabel2.AutoScroll = true;
-            this.htmlLabel2.AutoScrollMinSize = new System.Drawing.Size(121, 30);
-            this.htmlLabel2.AutoSize = false;
-            this.htmlLabel2.BackColor = System.Drawing.SystemColors.Window;
-            this.htmlLabel2.Font = new System.Drawing.Font("굴림", 15F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(129)));
-            this.htmlLabel2.Location = new System.Drawing.Point(34, 23);
-            this.htmlLabel2.Name = "htmlLabel2";
-            this.htmlLabel2.Size = new System.Drawing.Size(132, 32);
-            this.htmlLabel2.TabIndex = 4;
-            this.htmlLabel2.Text = "선택 날짜 : ";
-            this.htmlLabel2.UseWaitCursor = true;
+            this.selDate.Cursor = System.Windows.Forms.Cursors.Default;
+            this.selDate.FontSize = MetroFramework.MetroLabelSize.Tall;
+            this.selDate.Location = new System.Drawing.Point(208, 68);
+            this.selDate.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.selDate.Name = "selDate";
+            this.selDate.Size = new System.Drawing.Size(593, 46);
+            this.selDate.Style = MetroFramework.MetroColorStyle.Black;
+            this.selDate.TabIndex = 7;
+            this.selDate.Text = "*";
+            this.selDate.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // updatesalesBtn
+            // 
+            this.updatesalesBtn.Location = new System.Drawing.Point(208, 261);
+            this.updatesalesBtn.Margin = new System.Windows.Forms.Padding(4);
+            this.updatesalesBtn.Name = "updatesalesBtn";
+            this.updatesalesBtn.Size = new System.Drawing.Size(140, 63);
+            this.updatesalesBtn.TabIndex = 10;
+            this.updatesalesBtn.Text = "매출 수정";
+            this.updatesalesBtn.UseSelectable = true;
+            this.updatesalesBtn.Click += new System.EventHandler(this.updatesalesBtn_Click);
+            // 
+            // metroButton1
+            // 
+            this.metroButton1.Location = new System.Drawing.Point(654, 261);
+            this.metroButton1.Margin = new System.Windows.Forms.Padding(4);
+            this.metroButton1.Name = "metroButton1";
+            this.metroButton1.Size = new System.Drawing.Size(140, 63);
+            this.metroButton1.TabIndex = 12;
+            this.metroButton1.Text = "DB 열기";
+            this.metroButton1.UseSelectable = true;
+            this.metroButton1.Click += new System.EventHandler(this.metroButton1_Click);
+            // 
+            // dbgrid
+            // 
+            this.dbgrid.AllowUserToResizeRows = false;
+            this.dbgrid.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.dbgrid.BackgroundColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dbgrid.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.dbgrid.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
+            this.dbgrid.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbgrid.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            this.dbgrid.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dbgrid.DefaultCellStyle = dataGridViewCellStyle5;
+            this.dbgrid.EnableHeadersVisualStyles = false;
+            this.dbgrid.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            this.dbgrid.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            this.dbgrid.Location = new System.Drawing.Point(43, 453);
+            this.dbgrid.Name = "dbgrid";
+            this.dbgrid.ReadOnly = true;
+            this.dbgrid.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(174)))), ((int)(((byte)(219)))));
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Pixel);
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(198)))), ((int)(((byte)(247)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(17)))), ((int)(((byte)(17)))), ((int)(((byte)(17)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dbgrid.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            this.dbgrid.RowHeadersWidth = 62;
+            this.dbgrid.RowHeadersWidthSizeMode = System.Windows.Forms.DataGridViewRowHeadersWidthSizeMode.DisableResizing;
+            this.dbgrid.RowTemplate.Height = 30;
+            this.dbgrid.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+            this.dbgrid.Size = new System.Drawing.Size(1140, 502);
+            this.dbgrid.TabIndex = 7;
+            this.dbgrid.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dbgrid_CellClick);
             // 
             // 매출관리
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 12F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 18F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(877, 659);
-            this.Controls.Add(this.listView1);
+            this.ClientSize = new System.Drawing.Size(1253, 988);
+            this.Controls.Add(this.dbgrid);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.monthCalendar1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.Name = "매출관리";
+            this.Padding = new System.Windows.Forms.Padding(29, 90, 29, 30);
             this.Text = "매출관리";
             this.groupBox1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dbgrid)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -225,15 +243,11 @@ namespace WindowsFormsApp3
         private System.Windows.Forms.MonthCalendar monthCalendar1;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel1;
         private System.Windows.Forms.GroupBox groupBox1;
-        private MetroFramework.Drawing.Html.HtmlLabel htmlLabel3;
         private MetroFramework.Controls.MetroLabel selDate;
-        private MetroFramework.Controls.MetroLabel metroLabel2;
-        private System.Windows.Forms.ListView listView1;
-        private System.Windows.Forms.ColumnHeader columnHeader1;
-        private System.Windows.Forms.ColumnHeader day;
-        private System.Windows.Forms.ColumnHeader sales;
         private MetroFramework.Controls.MetroTextBox totalpricetxtbox;
-        private MetroFramework.Controls.MetroButton updatesalesBtn;
         private MetroFramework.Drawing.Html.HtmlLabel htmlLabel2;
+        private MetroFramework.Controls.MetroButton metroButton1;
+        private MetroFramework.Controls.MetroButton updatesalesBtn;
+        private MetroFramework.Controls.MetroGrid dbgrid;
     }
 }
