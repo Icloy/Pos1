@@ -99,6 +99,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="매출관리.resx">
+      <DependentUpon>매출관리.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="메인메뉴.resx">
       <DependentUpon>메인메뉴.cs</DependentUpon>
     </EmbeddedResource>
