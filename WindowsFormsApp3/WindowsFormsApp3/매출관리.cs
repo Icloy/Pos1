@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using Oracle.DataAccess;
 using Oracle.DataAccess.Client;
 
 namespace WindowsFormsApp3
@@ -28,16 +29,32 @@ namespace WindowsFormsApp3
         private void monthCalendar1_DateSelected(object sender, DateRangeEventArgs e) //날자 클릭시
         {
             DateTime date = monthCalendar1.SelectionStart; // data에 달력 시작 날짜를 넣음
-            string day = date.ToShortDateString().Replace("-", ""); // 달력 시작 날짜를 가져오는데 날짜 형식에서 "-"부분을 ""로 바꿔주는거.
-            selDate.Text = day;
+            string nday = date.ToShortDateString().Replace("-", ""); // 달력 시작 날짜를 가져오는데 날짜 형식에서 "-"부분을 ""로 바꿔주는거.
+            selDate.Text = nday;
 
-            DS.Clear();
-            DBAdapter.Fill(DS, "sales");
-            salesTable = DS.Tables["sales"];
-            DataColumn[] PrimaryKey = new DataColumn[1];
-            PrimaryKey[0] = salesTable.Columns["day"];
-            salesTable.PrimaryKey = PrimaryKey;
-            DataRow currRow = salesTable.Rows.Find(SelectedRowIndex);
+
+
+
+            string strConn = "User Id=hong1; Password = 1111; Data Source = (DESCRIPTION = (ADDRESS = (PROTOCOL = TCP)(HOST = localhost)(PORT = 1521))(CONNECT_DATA = (SERVER = DEDICATED)(SERVICE_NAME = xe))); ";
+            OracleConnection conn = new OracleConnection(strConn);
+            conn.Open();
+
+            OracleCommand cmd = new OracleCommand();
+            cmd.Connection = conn;
+             
+            cmd.CommandText = "select * from sales WHERE  day = :day";
+            cmd.Parameters.Add(new OracleParameter("@day",nday));
+
+            OracleDataReader rdr = cmd.ExecuteReader();
+
+            while (rdr.Read())
+            {
+                totalpricetxtbox.Clear();
+                String s = rdr["totalsale"] as string;
+
+                totalpricetxtbox.Text = s;
+            }
+            rdr.Close();
         }
 
         private void DB_Open()
