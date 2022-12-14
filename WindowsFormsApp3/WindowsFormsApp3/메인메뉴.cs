@@ -85,6 +85,13 @@ namespace WindowsFormsApp3
             Menuform.ShowDialog();
         }
 
+        private void listView1_ColumnClick(object sender, ColumnClickEventArgs e)
+        {
+            this.listView1.Items.Clear();
+            메뉴 Menuform1 = new 메뉴(this);
 
+
+            Menuform1.ShowDialog();
+        }
     }
 }
